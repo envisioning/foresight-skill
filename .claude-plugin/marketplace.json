@@ -1,0 +1,17 @@
+{
+  "name": "envisioning",
+  "description": "Agent skills and plugins from Envisioning.",
+  "owner": {
+    "name": "Envisioning",
+    "url": "https://www.envisioning.com"
+  },
+  "plugins": [
+    {
+      "name": "foresight",
+      "source": "./",
+      "description": "Run Envisioning's foresight method with your own agent and cite envisioning.com research.",
+      "category": "research",
+      "tags": ["foresight", "horizon scanning", "radar"]
+    }
+  ]
+}

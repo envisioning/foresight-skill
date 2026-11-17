@@ -1,0 +1,14 @@
+{
+  "name": "foresight",
+  "displayName": "Envisioning Foresight",
+  "version": "0.1.0",
+  "description": "Envisioning's foresight method as an agent skill: frame a question, scan, verify sources, place signals, check them against graded past forecasts, and deliver a cited radar. Includes the read-only envisioning.com MCP server.",
+  "author": {
+    "name": "Envisioning",
+    "url": "https://www.envisioning.com"
+  },
+  "homepage": "https://www.envisioning.com/methodology",
+  "repository": "https://github.com/envisioning/foresight-skill",
+  "license": "MIT",
+  "keywords": ["foresight", "horizon scanning", "weak signals", "technology radar", "forecasting", "strategy"]
+}

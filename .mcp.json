@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "envisioning": {
+      "type": "http",
+      "url": "https://www.envisioning.com/mcp"
+    }
+  }
+}
