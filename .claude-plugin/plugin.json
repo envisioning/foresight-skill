@@ -1,8 +1,8 @@
 {
   "name": "envisioning-foresight",
   "displayName": "Envisioning Foresight",
-  "version": "0.1.2",
-  "description": "Envisioning's foresight method as an agent skill: frame a question, scan, verify sources, place signals, check them against graded past forecasts, and deliver a cited radar. Includes the read-only envisioning.com MCP server.",
+  "version": "0.2.0",
+  "description": "Envisioning's foresight method as agent skills: run a cited horizon scan and radar, or check one claim about the future against Hindsight, Envisioning's record of published forecasts graded against what happened. Includes the read-only envisioning.com MCP server.",
   "author": {
     "name": "Envisioning",
     "url": "https://www.envisioning.com"
@@ -16,6 +16,10 @@
     "weak signals",
     "technology radar",
     "forecasting",
+    "forecast checking",
+    "forecast evaluation",
+    "hindsight",
+    "technology readiness",
     "strategy"
   ],
   "privacyPolicyUrl": "https://www.envisioning.com/agents#privacy",

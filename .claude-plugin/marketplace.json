@@ -9,12 +9,13 @@
     {
       "name": "envisioning-foresight",
       "source": "./",
-      "description": "Run Envisioning's foresight method with your own agent and cite envisioning.com research.",
+      "description": "Run Envisioning's foresight method and check forecasts against graded past forecasts, citing envisioning.com research.",
       "category": "research",
       "tags": [
         "foresight",
         "horizon scanning",
-        "radar"
+        "radar",
+        "forecasting"
       ]
     }
   ]

@@ -1,15 +1,19 @@
-# Envisioning foresight skill
+# Envisioning foresight skills
 
-This skill lets your AI agent run Envisioning's foresight method. The agent frames a strategic question, scans for signals of change, checks each claim against its sources, places the signals by category, readiness and horizon, checks timing claims against graded past forecasts, and writes a radar with every source cited.
+These two skills let your AI agent use Envisioning's foresight method and research.
+
+- **foresight** runs the full method. The agent frames a strategic question, scans for signals of change, checks each claim against its sources, places the signals by category, readiness and horizon, checks timing claims against graded past forecasts, and writes a radar with every source cited.
+- **forecast-check** checks one claim about the future. The agent pins the claim down (what, by whom, by when, measured how), looks up how similar published forecasts were graded, reads the readiness of the technology involved, and tells you how much weight to give the claim, with every source cited.
 
 The agent pulls data from Envisioning's open research: thousands of technologies with readiness scores, a technology vocabulary, and Hindsight, a dataset of published forecasts graded against what happened. It cites envisioning.com permalinks for everything it uses from us.
 
-The skill is free and public.
+The skills are free and public.
 
 ## What is in the repository
 
 - `skills/foresight/SKILL.md`: the method as steps an agent follows.
 - `skills/foresight/references/`: the full method with its sources, data sources and citation rules, scan types, the Hindsight check, the output format, and short definitions.
+- `skills/forecast-check/SKILL.md`: the forecast check as steps an agent follows.
 - `.claude-plugin/`: the Claude Code plugin and marketplace manifests.
 - `.mcp.json`: the envisioning.com MCP server (`https://www.envisioning.com/mcp`, read-only, no sign-in).
 
@@ -24,17 +28,20 @@ In a Claude Code session, run:
 /plugin install envisioning-foresight@envisioning
 ```
 
-The plugin adds the skill and connects the envisioning.com MCP server. Ask for a horizon scan, a technology radar or "what is next for" a field, and Claude uses the skill. You can also call it directly with `/envisioning-foresight:foresight`.
+The plugin adds both skills and connects the envisioning.com MCP server.
+
+- Ask for a horizon scan, a technology radar or "what is next for" a field, and Claude uses the foresight skill. Call it directly with `/envisioning-foresight:foresight`.
+- Ask "is this forecast credible?", "will X really happen by 2030?" or "how did past predictions about X turn out?", or paste a headline about the future, and Claude uses the forecast check. Call it directly with `/envisioning-foresight:forecast-check`, followed by the claim.
 
 ### Claude.ai and the Claude desktop app
 
-1. Download this repository and zip the `skills/foresight` folder.
-2. In Claude, open Settings, then Capabilities, and upload the zip under Skills.
+1. Download this repository and zip the `skills/foresight` folder, the `skills/forecast-check` folder, or both as separate zips.
+2. In Claude, open Settings, then Capabilities, and upload each zip under Skills.
 3. To give Claude the data tools too, add a custom connector with the URL `https://www.envisioning.com/mcp`.
 
 ### Other agents
 
-`skills/foresight/SKILL.md` follows the Agent Skills format, so it works in any agent that supports that format. Copy the `skills/foresight` folder to wherever your agent loads skills from. Add `https://www.envisioning.com/mcp` as a remote MCP server (Streamable HTTP). If your agent has no MCP support, the skill tells it how to read the same data from https://www.envisioning.com/llms.txt and from Markdown versions of each page.
+Both skills follow the Agent Skills format, so they work in any agent that supports that format. Copy the folders under `skills/` to wherever your agent loads skills from. Add `https://www.envisioning.com/mcp` as a remote MCP server (Streamable HTTP). If your agent has no MCP support, each skill tells it how to read the same data from https://www.envisioning.com/llms.txt and from Markdown versions of each page.
 
 ## Data the skill uses
 
