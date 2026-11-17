@@ -21,10 +21,10 @@ In a Claude Code session, run:
 
 ```
 /plugin marketplace add envisioning/foresight-skill
-/plugin install foresight@envisioning
+/plugin install envisioning-foresight@envisioning
 ```
 
-The plugin adds the skill and connects the envisioning.com MCP server. Ask for a horizon scan, a technology radar or "what is next for" a field, and Claude uses the skill. You can also call it directly with `/foresight:foresight`.
+The plugin adds the skill and connects the envisioning.com MCP server. Ask for a horizon scan, a technology radar or "what is next for" a field, and Claude uses the skill. You can also call it directly with `/envisioning-foresight:foresight`.
 
 ### Claude.ai and the Claude desktop app
 

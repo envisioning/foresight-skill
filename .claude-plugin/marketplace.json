@@ -7,11 +7,15 @@
   },
   "plugins": [
     {
-      "name": "foresight",
+      "name": "envisioning-foresight",
       "source": "./",
       "description": "Run Envisioning's foresight method with your own agent and cite envisioning.com research.",
       "category": "research",
-      "tags": ["foresight", "horizon scanning", "radar"]
+      "tags": [
+        "foresight",
+        "horizon scanning",
+        "radar"
+      ]
     }
   ]
 }
